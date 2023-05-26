@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVER</title>
+  </head>
+  <link rel="shortcut icon" type="image/x-icon" href="../source/naver.png" />
+  <style>
+    @import url(reset.css);
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Holtwood+One+SC&family=Jua&display=swap');
+    /* 네이버 글씨 */
+    .naver {
+      font-size: 40px;
+      font-weight: bold;
+      color: rgb(7, 199, 0);
+      font-family: 'Black Han Sans', sans-serif;
+    }
+
+    .prame {
+      border: 1px solid rgb(190, 190, 190);
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 0px 5px rgb(224, 224, 224);
+    }
+
+    /* 전체적인 틀 */
+    table {
+      width: 450px;
+      height: auto;
+      position: static;
+    }
+
+    /* 로그인 방법 선택 */
+    th {
+      border-bottom: 1px solid rgb(190, 190, 190);
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    .one_number {
+      border-left: 1px solid rgb(190, 190, 190);
+      border-right: 1px solid rgb(190, 190, 190);
+    }
+
+    .id_login {
+      border-bottom: 0px;
+    }
+
+    /* 아이디, 비밀번호 입력창 */
+    .text {
+      height: 30px;
+      width: 300px;
+    }
+
+    /* 로그인 상태 유지 여부 */
+    .check {
+      display: inline-block;
+      position: relative;
+      left: 230px;
+    }
+
+    /* 로그인 버튼 */
+    .login {
+      background-color: rgb(7, 199, 0);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      left: 50px;
+      width: 350px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    p {
+      color: gray;
+      text-align: center;
+    }
+    .search {
+      color: gray;
+    }
+    .qr,
+    .one_number {
+      color: rgb(133, 133, 133);
+    }
+    .one_number_content,
+    .qr_content {
+      color: rgb(133, 133, 133);
+    }
+  </style>
+  <body>
+    <br /><br /><br />
+    <center>
+      <a href="./window.html" class="naver">NAVER</a>
+    </center>
+
+    <br /><br />
+
+    <center>
+      <div class="prame">
+        <table>
+          <tr>
+            <th class="id_login">ID 로그인</th>
+            <th class="one_number">
+              <a class="one_number_content" href="./naver_one.html"
+                >일회용 번호</a
+              >
+            </th>
+            <th class="qr">
+              <a class="qr_content" href="./naver_qr.html">QR코드</a>
+            </th>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <br />
+              <center>
+                <input
+                  class="text"
+                  type="text"
+                  name="id"
+                  id="id"
+                  placeholder="아이디"
+                />
+                <br />
+                <input
+                  class="text"
+                  type="password"
+                  name="id"
+                  id="id"
+                  placeholder="비밀번호"
+                />
+              </center>
+              <br />
+              <input type="checkbox" />로그인 상태 유지
+              <div class="check"><input type="checkbox" />IP보안</div>
+              <br /><br /><br />
+              <a href=""><div class="login">로그인</div></a>
+              <br />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+    <br />
+    <p>
+      <a href="" class="search">비밀번호 찾기</a> |
+      <a href="" class="search">아이디 찾기</a> |
+      <a href="" class="search">회원가입</a>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVER</title>
+  </head>
+  <link rel="shortcut icon" type="image/x-icon" href="../source/naver.png" />
+  <style>
+    @import url(reset.css);
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Holtwood+One+SC&family=Jua&display=swap');
+    /* 네이버 글씨 */
+    .naver {
+      font-size: 40px;
+      font-weight: bold;
+      color: rgb(7, 199, 0);
+      font-family: 'Black Han Sans', sans-serif;
+    }
+
+    .prame {
+      border: 1px solid rgb(190, 190, 190);
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 0px 5px rgb(224, 224, 224);
+    }
+
+    /* 전체적인틀 */
+    table {
+      width: 450px;
+      height: auto;
+      position: static;
+    }
+
+    /* 로그인 방법 선택 */
+    th {
+      border-bottom: 1px solid rgb(190, 190, 190);
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    .qr {
+      border-bottom: 0;
+      border-left: 1px solid rgb(190, 190, 190);
+      border-right: 0;
+    }
+
+    /* 번호입력창 */
+
+    .number {
+      text-align: center;
+      color: rgb(190, 190, 190);
+      font-size: 17px;
+      width: 350px;
+      height: 50px;
+      border: 1px solid rgb(190, 190, 190);
+      border-radius: 10px;
+    }
+
+    /* 로그인 버튼 */
+    .login {
+      background-color: rgb(7, 199, 0);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      left: 50px;
+      width: 350px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .sear {
+      color: gray;
+      text-align: center;
+    }
+    .search {
+      color: gray;
+    }
+
+    .expect {
+      color: black;
+    }
+
+    .option {
+      color: rgb(7, 199, 0);
+    }
+
+    .one_number_content,
+    .id_login_content {
+      color: rgb(133, 133, 133);
+    }
+
+    .qr_code {
+      width: 100px;
+    }
+
+    .expect_ex {
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <br /><br /><br />
+    <center>
+      <p class="naver">NAVER</p>
+    </center>
+
+    <br /><br />
+
+    <center>
+      <div class="prame">
+        <table>
+          <tr>
+            <th class="id_login">
+              <a class="id_login_content" href="./naver.html">ID 로그인</a>
+            </th>
+            <th class="one_number">
+              <a class="one_number_content" href="./naver_one.html"
+                >일회용 번호</a
+              >
+            </th>
+            <th class="qr">QR코드</th>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <br />
+              <center>
+                <br />
+                <img
+                  class="qr_code"
+                  src="../source/naver_qr_code.png"
+                  alt="QR"
+                />
+                <br /><br />
+                <p class="expect">
+                  공용 네트워크, 공용 PC라면 안전을 위해<br />
+                  QR코드로 로그인해주세요.
+                </p>
+                <br />
+                <p class="expect_ex">
+                  네이버 앱>렌즈를 눌러 QR코드를 스캔하여<br />
+                  보이는 숫자 중 00를 선택하면 로그인 됩니다.
+                </p>
+                <br /><br />
+              </center>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+    <br />
+    <p class="sear">
+      <a href="" class="search">비밀번호 찾기</a> |
+      <a href="" class="search">아이디 찾기</a> |
+      <a href="" class="search">회원가입</a>
+    </p>
+  </body>
+</html>
